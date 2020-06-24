@@ -6,12 +6,14 @@ class Main {
 
         Car car = new Car("AMQ123", new Account("Andres Herrera", "AND123"));
         car.passenger = 4;
-
         car.printDataCar();
 
-        Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA876"));
+        UberX car2 = new UberX("QWE567", new Account("Andrea Herrera UberX", "ANDA876"), "Chevrolet", "Camaro");
         car2.passenger = 3;
-
         car2.printDataCar();
+
+        Paypal paypal = new Paypal(1, 5000, "jhanbayer@gmail.com", "Password");
+        paypal.printDataCar();
+        paypal.emailPrint();
     }
 }
