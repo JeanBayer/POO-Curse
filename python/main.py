@@ -1,5 +1,7 @@
 from car import Car
 from account import Account
+from paypal import Paypal
+from payment import Payment
 
 if __name__ ==  "__main__":
     print("Hola mundo")
@@ -10,4 +12,7 @@ if __name__ ==  "__main__":
 
     car2 = Car("QWE567", Account("Andrea Herrera", "AND123"))
     print(vars(car2))
+
+    pagos = Paypal(1, 5000, "jhanbayer@gmail.com", "password")
+    print(vars(pagos))
      
