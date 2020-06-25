@@ -10,10 +10,13 @@ class Main {
         car.printDataCar();
         */
 
-        UberX car2 = new UberX("QWE567", new Account("Andrea Herrera UberX", "ANDA876", "andrea@", "anderaxx"), "Chevrolet", "Camaro");
-        car2.setPassenger(4);
-        //car2.passenger = 3;
-        car2.printDataCar();
+        UberX uberx = new UberX("QWE567", new Account("Andrea Herrera UberX", "ANDA876", "andrea@", "anderaxx"), "Chevrolet", "Camaro");
+        uberx.setPassenger(4);
+        uberx.printDataCar();
+
+        UberVan ubervan = new UberVan("QWE567", new Account("Andrea Herrera UberVan", "ANDA876", "andrea@", "anderaxx"));
+        ubervan.setPassenger(4);
+        ubervan.printDataCar();
 
         /*
         Paypal paypal = new Paypal(1, 5000, "jhanbayer@gmail.com", "Password");

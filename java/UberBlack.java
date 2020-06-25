@@ -18,5 +18,24 @@ class UberBlack extends Car{
 
     }
 
+    
+    public UberBlack(String license, Account driver){
+        super(license, driver);
+    }
+
+
+    //polimorfismo con el metodo set passenger que pertenece a car
+    @Override
+    public void setPassenger(Integer passenger) {
+       
+        if(passenger == 6){
+            super.setPassenger(passenger);
+        } else {
+            System.out.println("Necesitas aginar 6 pasajeros");
+        }
+        
+
+    }
+
 
 }
