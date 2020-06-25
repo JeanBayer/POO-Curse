@@ -1,8 +1,17 @@
 class Payment {
 
-    constructor(){
+    constructor(id, monto){
 
-        this.id;
+        this.id = id;
+        this.monto = monto;
+        
+    }
+
+    printDataPayment(){
+
+        console.log("id: " + this.id + " monto: " + this.monto);
 
     }
+
+
 }
